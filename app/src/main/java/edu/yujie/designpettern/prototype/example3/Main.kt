@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
     )
     println(sbCopy)
 
-    println("-----------------")
+    println("--------------------------")
     val sbDefault =
         String.format("code:%s, explanatoryNote:%s", codeEditer.code, codeEditer.explanatoryNote)
     println(sbDefault)
