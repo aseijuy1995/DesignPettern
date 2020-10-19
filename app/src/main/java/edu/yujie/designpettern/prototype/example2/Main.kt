@@ -8,7 +8,7 @@ package edu.yujie.designpettern.prototype.example2
 fun main(args: Array<String>) {
     val email = Email("abc@gmail.com", "Hello", "Don't know what to write.")
 
-    val emailCopy = email.copy("other@gmail.com")
+    val emailCopy = email.copy(recipient = "other@gmail.com")
     println("email:$email")
     println("emailCopy:$emailCopy")
 }

@@ -35,10 +35,9 @@ abstract class Component(val name: String) {
 }
 
 
-class Composite(name: String) : Component(name) {}
+class Composite(name: String) : Component(name)
 
 class Left(name: String) : Component(name) {
-
     override fun add(c: Component) {
         println("Leaf cant add component")
     }
@@ -46,5 +45,4 @@ class Left(name: String) : Component(name) {
     override fun remove(c: Component) {
         println("Leaf cant remove component")
     }
-
 }

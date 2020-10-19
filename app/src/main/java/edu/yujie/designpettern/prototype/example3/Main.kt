@@ -6,24 +6,24 @@ package edu.yujie.designpettern.prototype.example3
  * @param 參數
  */
 fun main(args: Array<String>) {
-    val codeEditer = CodeEditer(code = "123", explanatoryNote = arrayListOf("1", "2", "3"))
+    val codeEditor = CodeEditor(code = "123", explanatoryNote = arrayListOf("1", "2", "3"))
     val sb =
-        String.format("code:%s, explanatoryNote:%s", codeEditer.code, codeEditer.explanatoryNote)
+        String.format("code:%s, explanatoryNote:%s", codeEditor.code, codeEditor.explanatoryNote)
     println(sb)
 
-    val codeEditerCopy = codeEditer.clone() as CodeEditer
-    codeEditerCopy.code = "456"
+    val codeEditorCopy = codeEditor.clone() as CodeEditor
+    codeEditorCopy.code = "456"
 
     val sbCopy = String.format(
         "code:%s, explanatoryNote:%s",
-        codeEditerCopy.code,
-        codeEditerCopy.explanatoryNote
+        codeEditorCopy.code,
+        codeEditorCopy.explanatoryNote
     )
     println(sbCopy)
 
     println("--------------------------")
     val sbDefault =
-        String.format("code:%s, explanatoryNote:%s", codeEditer.code, codeEditer.explanatoryNote)
+        String.format("code:%s, explanatoryNote:%s", codeEditor.code, codeEditor.explanatoryNote)
     println(sbDefault)
 
 }
